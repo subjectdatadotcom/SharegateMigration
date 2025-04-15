@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <UserAndGroupMappings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Unresolved AccountName="i:0#.f|membership|rbandla@test.com" DisplayName="Raja Bandla" PrincipalType="User" />
+  <Unresolved AccountName="i:0#.f|membership|testuser@test.com" DisplayName="Test User" PrincipalType="User" />
   <Mappings>
     <Mapping>
       <Source AccountName="AdeleV@m365x76832558.onmicrosoft.com" DisplayName="AdeleV@m365x76832558.onmicrosoft.com" PrincipalType="User" />
-      <Destination AccountName="RBandla@test.com" DisplayName="RBandla@test.com" PrincipalType="User" />
+      <Destination AccountName="testuser@test.com" DisplayName="testuser@test.com" PrincipalType="User" />
     </Mapping>
     <Mapping>
       <Source AccountName="NestorW@m365x76832558.onmicrosoft.com" DisplayName="NestorW@m365x76832558.onmicrosoft.com" PrincipalType="User" />
-      <Destination AccountName="MattBauer@test.com" DisplayName="MattBauer@test.com" PrincipalType="User" />
+      <Destination AccountName="user02@test.com" DisplayName="user02@test.com" PrincipalType="User" />
     </Mapping>
     <Mapping>
       <Source AccountName="admin@m365x76832558.onmicrosoft.com" DisplayName="admin@m365x76832558.onmicrosoft.com" PrincipalType="User" />
-      <Destination AccountName="tmuir@test.com" DisplayName="tmuir@test.com" PrincipalType="User" />
+      <Destination AccountName="user03@test.com" DisplayName="user03@test.com" PrincipalType="User" />
     </Mapping>
     <Mapping>
       <Source AccountName="c:0t.c|tenant|8d35f930-8049-467e-ab93-d814ab451ae6" DisplayName="sg-Engineering" PrincipalType="SecurityGroup" />
@@ -20,7 +20,7 @@
     </Mapping>
     <Mapping>
       <Source AccountName="raulr@m365x76832558.onmicrosoft.com" DisplayName="raulr@m365x76832558.onmicrosoft.com" PrincipalType="User" />
-      <Destination AccountName="RBandla@test.com" DisplayName="RBandla@test.com" PrincipalType="User" />
+      <Destination AccountName="testuser@test.com" DisplayName="testuser@test.com" PrincipalType="User" />
     </Mapping>
   </Mappings>
 </UserAndGroupMappings>
