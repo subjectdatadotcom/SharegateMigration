@@ -1,7 +1,7 @@
 ﻿# Import ShareGate PowerShell Module
 Import-Module Sharegate
 
-$MyDir = "C:\Users\RBandla\Documents\SG_MigrationScripts"
+$MyDir = "C:\Users\RB\Documents\SG_MigrationScripts"
 
 .\SGUM_UserAndGroupMappings.ps1
 #.\Creds.ps1
