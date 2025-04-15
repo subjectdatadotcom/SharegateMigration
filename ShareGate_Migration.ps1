@@ -13,6 +13,10 @@ $sgumFile = $MyDir + "\M365map.sgum"  # Path to refer SGUM user mapping file
 $batch = ([System.IO.Path]::GetFileNameWithoutExtension($sitesInputFile)) -split "_" | Select-Object -Last 1
 $logFile = $MyDir + "\logs\$($batch)_migration_log.txt"  # Log file for tracking migrations
 
+if (-not (Test-Path -Path "$MyDir\logs")) {
+    New-Item -Path "$MyDir\logs" -ItemType Directory
+}
+
 # User input for Insane Mode or Normal Mode
 $useInsaneMode = Read-Host "Do you want to use Insane Mode? (yes/no)"
 $insaneMode = $false
