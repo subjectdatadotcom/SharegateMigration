@@ -7,7 +7,7 @@ $srcPasswordText = ""
 
 $srcPassword = ConvertTo-SecureString $srcPasswordText -AsPlainText -Force
 
-$TargetConn = Connect-Site -Url  https://test.sharepoint.com/sites/EcoTest -Browser -Username $srcUsername -Password $srcPassword
+$TargetConn = Connect-Site -Url  https://test.sharepoint.com/sites/EcoTest -Username $srcUsername -Password $srcPassword
 
 
 Connect-Site -Url  https://test.sharepoint.com/sites/sharegate_test_teamsite -UseCredentialsFrom $TargetConn
