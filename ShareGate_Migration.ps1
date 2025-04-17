@@ -94,7 +94,6 @@ foreach ($site in $sites) {
         $listsToMigrate = ($listNames -split "\|").Trim()  # Split list names if multiple lists are provided
 
         foreach ($list in $listsToMigrate) {
-        #$list = $listsToMigrate
             Write-Host "Migrating list: $list from $sourceSiteURL to $targetSiteURL"
             Add-Content -Path $logFile -Value "Migrating list: $list from $sourceSiteURL to $targetSiteURL"
 
@@ -106,7 +105,6 @@ foreach ($site in $sites) {
                 # Perform a Pre-check
                 Copy-Content -SourceList $srcList -DestinationList $dstList -MappingSettings $mappingSettings -CopySettings $copySettings -WhatIf
             } else {
-                # Perform Actual Content Migration
                 Copy-List -List $srcList -DestinationSite $dstSite -MappingSettings $mappingSettings
                 # Copy-Content -SourceList $srcList -DestinationList $dstList -MappingSettings $mappingSettings -CopySettings $copySettings
                 Copy-ObjectPermissions -Source $srcSite -Destination $dstSite -MappingSettings $mappingSettings
@@ -114,7 +112,6 @@ foreach ($site in $sites) {
         }
     } 
     else {
-        # If no list is specified, perform full site migration
         Write-Host "Performing full site migration from $sourceSiteURL to $targetSiteURL"
         Add-Content -Path $logFile -Value "Performing full site migration from $sourceSiteURL to $targetSiteURL"
 
@@ -123,7 +120,6 @@ foreach ($site in $sites) {
             Copy-Site -Site $srcSite -DestinationSite $dstSite -MappingSettings $mappingSettings -CopySettings $copySettings -WhatIf
         } 
         else {
-            # Perform Full Site Migration with Insane Mode or Normal Mode
             if ($insaneMode) {
                 Copy-Site -Site $srcSite -DestinationSite $dstSite -MappingSettings $mappingSettings -CopySettings $copySettings -InsaneMode -Merge -Subsites
                 Copy-ObjectPermissions -Source $srcSite -Destination $dstSite -MappingSettings $mappingSettings
