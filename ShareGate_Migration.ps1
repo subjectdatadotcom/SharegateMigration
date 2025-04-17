@@ -57,7 +57,6 @@ if(([String]::IsNullOrWhiteSpace($TargetConn))) {
 }
 
 foreach ($site in $sites) {
-#$site = $sites[0]
     $sourceSiteURL = $site.SourceSiteURL.Trim()
     $targetSiteURL = $site.TargetSiteURL.Trim()
     $listNames = $site.ListName # Can be empty or contain list names separated by "|"
