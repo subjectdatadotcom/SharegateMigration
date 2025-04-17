@@ -1,4 +1,4 @@
 SourceValue,DestinationValue,PrincipalType
-AdeleV@m365x76832558.onmicrosoft.com,RBandla@test.com,None
-NestorW@m365x76832558.onmicrosoft.com,RBandla@test.com,None
-admin@m365x76832558.onmicrosoft.com,RBandla@test.com,None
+AdeleV@m365x76832558.onmicrosoft.com,user01@test.com,None
+NestorW@m365x76832558.onmicrosoft.com,user02@test.com,None
+admin@m365x76832558.onmicrosoft.com,user03@test.com,None
