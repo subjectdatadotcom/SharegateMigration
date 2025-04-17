@@ -2,6 +2,3 @@ SourceValue,DestinationValue,PrincipalType
 AdeleV@m365x76832558.onmicrosoft.com,RBandla@test.com,None
 NestorW@m365x76832558.onmicrosoft.com,RBandla@test.com,None
 admin@m365x76832558.onmicrosoft.com,RBandla@test.com,None
-Benefits Members,Sharegate_Test_CommunicationSite Members,SharePointGroup
-allcompany@m365x76832558.onmicrosoft.com,Sharegate_Test_TeamSite@test.onmicrosoft.com,SecurityGroup
-Everyone except external users,Everyone except external users,SecurityGroup
