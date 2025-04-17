@@ -9,7 +9,7 @@ $MyDir = "C:\Users\RB\Documents\SG_MigrationScripts"
 
 # Define paths
 $sitesInputFile = $MyDir + "\sitemappings_batch1.csv"  # Path to site mappings csv input file
-$sgumFile = $MyDir + "\M365map.sgum"  # Path to refer SGUM user mapping file
+$sgumFile = $MyDir + "\spusermappings.sgum"  # Path to refer SGUM user mapping file
 $batch = ([System.IO.Path]::GetFileNameWithoutExtension($sitesInputFile)) -split "_" | Select-Object -Last 1
 $logFile = $MyDir + "\logs\$($batch)_migration_log.txt"  # Log file for tracking migrations
 
